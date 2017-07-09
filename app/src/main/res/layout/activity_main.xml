@@ -9,57 +9,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abubakarzahid.loginfoam.MainActivity"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorAccent">
 
-    <LinearLayout
+
+    <TextView
+        android:text="write anything to pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="go to second activity"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="80dp"
-        android:background="@color/colorAccent">
-
-        <TextView
-            android:text="Textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtname"
-            android:padding="5dp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Enter username"
-            android:ems="10"
-            android:id="@+id/edtname"
-            android:padding="5dp"/>
-
-        <TextView
-            android:text="TextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtn"
-            android:padding="5dp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Enter password"
-            android:ems="10"
-            android:id="@+id/edtpassword"
-            android:padding="5dp"/>
-
-        <Button
-            android:text="Login"
-            android:layout_width="164dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnlogin"
-            android:padding="5dp"
-            android:layout_marginLeft="5dp"/>
-    </LinearLayout>
-
-
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/btnclick" />
 </RelativeLayout>

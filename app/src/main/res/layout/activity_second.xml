@@ -8,25 +8,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.abubakarzahid.loginfoam.SecondActivity">
+    tools:context="com.example.abubakarzahid.loginfoam.SecondActivity"
+    android:background="#132456">
 
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="12dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/list" />
-
-    <Button
-        android:text="Back to login"
+    <TextView
+        android:text="write anything to go back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/list"
-        android:layout_alignStart="@+id/list"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="64dp"
-        android:id="@+id/button2" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:id="@+id/textView1"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:text="go to first activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/btnclick1" />
+
+
+
 </RelativeLayout>

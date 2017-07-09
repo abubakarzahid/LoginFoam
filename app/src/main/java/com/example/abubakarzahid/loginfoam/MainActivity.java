@@ -8,21 +8,17 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editname;
-    EditText editpassword;
-    Button btnonclick;
+   Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editname = (EditText) findViewById(R.id.edtname);
-        editpassword = (EditText)findViewById(R.id.edtpassword);
-        btnonclick = (Button) findViewById(R.id.btnlogin);
+        button = (Button)findViewById(R.id.btnclick);
     }
-    public void btnclickact1(View view){
-        Intent i = new Intent(MainActivity.this,SecondActivity.class);
-        startActivity(i);
+    public void btnclick1(View view){
+        Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+        startActivity(intent);
     }
 
     }

@@ -8,21 +8,17 @@ import android.widget.Button;
 import android.widget.ListView;
 
 public class SecondActivity extends AppCompatActivity {
-    ListView listView;
-    Button btn;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        listView = (ListView)findViewById(R.id.list);
-        btn = (Button) findViewById(R.id.button2);
+      button1= (Button)findViewById(R.id.btnclick1);
     }
-    public void btnclickact2(View view){
-        Intent i = new Intent(SecondActivity.this,MainActivity.class);
-        startActivity(i);
+    public void btnclick2 (View view){
+        Intent intent = new Intent(SecondActivity.this,MainActivity.class);
+        startActivity(intent);
     }
-
-
 
 }
